@@ -11,7 +11,7 @@ library(tidyr)
 library(ggthemes)
 library(knitr)
 
-knitr::opts_chunk$set(dev='svg', results = "asis", warning=FALSE, cache=TRUE, message=FALSE, fontsize='small', size='footnotesize', sanitize=TRUE, dev.args = list(bg = 'transparent'))
+knitr::opts_chunk$set(results = "asis", warning=FALSE, cache=TRUE, message=FALSE, fontsize='small', size='footnotesize', sanitize=TRUE, dev.args = list(bg = 'transparent'))
 
 theme_set(theme_tufte(base_size = 10))
 ```
@@ -62,7 +62,7 @@ The rightmost bar of these histograms is too high. Subtract one for the indicato
 ggplot(corrmatrix, aes(x=culture)) + geom_histogram()
 ```
 
-![](dds_files/figure-markdown_github/culture-1.svg)
+![](dds_files/figure-markdown_github/culture-1.png)
 
 ``` r
 correlations <- as.numeric(corrmatrix["culture",]) #each row
@@ -89,25 +89,25 @@ kable(data.frame(highest))
 ggplot(corrmatrix, aes(x=education)) + geom_histogram()
 ```
 
-![](dds_files/figure-markdown_github/education-1.svg)
+![](dds_files/figure-markdown_github/education-1.png)
 
 ``` r
 ggplot(corrmatrix, aes(x=greenery)) + geom_histogram()
 ```
 
-![](dds_files/figure-markdown_github/greenery-1.svg)
+![](dds_files/figure-markdown_github/greenery-1.png)
 
 ``` r
 ggplot(corrmatrix, aes(x=libraries)) + geom_histogram()
 ```
 
-![](dds_files/figure-markdown_github/libraries-1.svg)
+![](dds_files/figure-markdown_github/libraries-1.png)
 
 ``` r
 ggplot(corrmatrix, aes(x=police)) + geom_histogram()
 ```
 
-![](dds_files/figure-markdown_github/police-1.svg)
+![](dds_files/figure-markdown_github/police-1.png)
 
 ``` r
 correlations <- as.numeric(corrmatrix["police",]) #each row
@@ -134,28 +134,28 @@ kable(data.frame(highest))
 ggplot(corrmatrix, aes(x=schools)) + geom_histogram()
 ```
 
-![](dds_files/figure-markdown_github/schools-1.svg)
+![](dds_files/figure-markdown_github/schools-1.png)
 
 ``` r
 ggplot(corrmatrix, aes(x=sport_ctr)) + geom_histogram()
 ```
 
-![](dds_files/figure-markdown_github/sport_ctr-1.svg)
+![](dds_files/figure-markdown_github/sport_ctr-1.png)
 
 ``` r
 ggplot(corrmatrix, aes(x=theatre)) + geom_histogram()
 ```
 
-![](dds_files/figure-markdown_github/theatre-1.svg)
+![](dds_files/figure-markdown_github/theatre-1.png)
 
 ``` r
 ggplot(corrmatrix, aes(x=area_sqKM)) + geom_histogram()
 ```
 
-![](dds_files/figure-markdown_github/area-1.svg)
+![](dds_files/figure-markdown_github/area-1.png)
 
 ``` r
 ggplot(corrmatrix, aes(x=population)) + geom_histogram()
 ```
 
-![](dds_files/figure-markdown_github/population-1.svg)
+![](dds_files/figure-markdown_github/population-1.png)
